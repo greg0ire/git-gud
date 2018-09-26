@@ -41,6 +41,17 @@ Always use it, avoid `git add .`
 
 <img src="./patch-option.png" alt="patch screenshot" />
 
+---
+## Reviewing one more time
+
+```shell
+git commit --verbose
+git commit -v # for short
+```
+
+- is your second best friend
+- another chance to catch your mistakes before they get out
+
 
 ---
 
