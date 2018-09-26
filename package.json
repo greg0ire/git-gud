@@ -1,0 +1,15 @@
+{
+  "name": "git-gud",
+  "version": "1.0.0",
+  "description": "How to use Git",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "reveal-md": "^1.1.3"
+  },
+  "scripts": {
+    "start": "reveal-md index.md --port 8000 --theme=solarized --css main.css --scripts widgets.js,embed-tweet.js",
+    "build": "reveal-md index.md --static _site --theme=solarized --css main.css --scripts widget.js,embed-tweet.js"
+  }
+}
