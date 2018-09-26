@@ -146,6 +146,14 @@ git checkout origin/master
 ```
 
 ---
+## Basic hygiene
+
+```shell
+git fetch --prune
+git branch --merged origin/master | xargs git branch -d
+```
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
