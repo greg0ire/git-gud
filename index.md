@@ -188,6 +188,15 @@ git rebase --interactive 6aa1c74 # git rebase -i for short
 <img src="./autosquash.png" alt="autosquash in action" />
 
 ---
+## Excluding files globally
+
+
+```shell
+git config --global core.excludesfile ~/.gitignore_global
+echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.gitignore_global
+```
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
