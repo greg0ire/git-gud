@@ -154,6 +154,13 @@ git branch --merged origin/master | xargs git branch -d
 ```
 
 ---
+## Undoing a catastrophic failure
+
+```
+git reflog --date=iso
+```
+
+---
 ## Understanding `checkout`'s "inconsistent" API
 
 ```shell
