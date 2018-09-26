@@ -34,7 +34,7 @@ git add -p # for short
 - allows you to commit part of a file
 - allows you to catch your mistake before they get out
 
-Always use it, avoid `git add .`
+Always use it, avoid `git add .` (use `git add -N`?)
 
 ---
 ## Committing hunks of patch
