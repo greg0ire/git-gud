@@ -177,6 +177,17 @@ git checkout README.md # shortcut for git checkout HEAD README.md
 ```
 
 ---
+## Rebasing with ease
+
+```shell
+git config --global rebase.autostash true
+git config --global rebase.autosquash true
+git commit --fixup b9acf57
+git rebase --interactive 6aa1c74 # git rebase -i for short
+```
+<img src="./autosquash.png" alt="autosquash in action" />
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
