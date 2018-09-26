@@ -133,6 +133,18 @@ git blame path/to/file/with/an/issue.php # the "I'm feeling lucky" way
 git log -S 'var_dump' -p # the accurate way
 ```
 
+
+---
+## How to avoid committing on the master branch
+
+```shell
+git branch -d master
+```
+Need to test something on "master"?
+```
+git checkout origin/master
+```
+
 ---
 
 <div style="width: 50%; float: left;">
