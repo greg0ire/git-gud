@@ -98,6 +98,23 @@ git config --global core.editor "vim"
 
 <img src="./opinion.jpg" alt="your opinion" />
 
+---
+## Proving your innocence: bisection
+
+```shell
+git bisect start
+git bisect bad
+git checkout ancient-commit
+git bisect good
+git bisect [good|bad|skip]
+git bisect [good|bad|skip]
+…
+git bisect reset
+```
+
+- rarely needed
+- very useful in dire situations
+- is a good reason to write short commits
 
 ---
 
