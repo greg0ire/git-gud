@@ -15,7 +15,7 @@
 ---
 <img src="./git.svg" />
 
-- **Linus Torvald's** side project
+- **Linus Torvald's** 2005 side project, "named" after him 😁
 - Maintained by **Junio C Hamano** a.k.a. gitster
 
 👏
