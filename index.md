@@ -154,6 +154,22 @@ git branch --merged origin/master | xargs git branch -d
 ```
 
 ---
+## Understanding `checkout`'s "inconsistent" API
+
+```shell
+git checkout 💩 # resets the working tree to that branch
+git checkout README.md # forgets about changes in README.md 😕
+git checkout 💩 README.txt # sets README.md to what it looks like in 💩
+```
+
+💡
+
+```shell
+git checkout 💩 # shortcut for git checkout 💩 .
+git checkout README.md # shortcut for git checkout HEAD README.md
+```
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
