@@ -22,6 +22,27 @@
 
 
 ---
+## Committing hunks of patch
+
+```shell
+git add --patch
+git add -p # for short
+```
+
+- is your best friend
+- works with `reset` and `checkout` too
+- allows you to commit part of a file
+- allows you to catch your mistake before they get out
+
+Always use it, avoid `git add .`
+
+---
+## Committing hunks of patch
+
+<img src="./patch-option.png" alt="patch screenshot" />
+
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
