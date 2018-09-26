@@ -126,6 +126,14 @@ They happen when several people change the same file.
 - write short lines (< 80 - 120 chars)
 
 ---
+## Finding the culprit 🔍
+
+```shell
+git blame path/to/file/with/an/issue.php # the "I'm feeling lucky" way
+git log -S 'var_dump' -p # the accurate way
+```
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
