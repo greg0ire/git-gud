@@ -117,6 +117,15 @@ git bisect reset
 - is a good reason to write short commits
 
 ---
+## Avoiding (git) conflicts
+
+They happen when several people change the same file.
+
+- when in doubt, use alphabetical order
+- respect the Open/Close Principle
+- write short lines (< 80 - 120 chars)
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
