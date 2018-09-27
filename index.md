@@ -211,6 +211,15 @@ git config --global init.templatedir ~/path/to/my/templatedir
 - I wrote an entire project about this, check it out: http://git-template.readthedocs.io
 
 ---
+## Viewing your history, the cool way
+
+```shell
+gource
+```
+
+<img src="./gource.png" alt="Gource" />
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>
