@@ -201,6 +201,16 @@ echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.gitignore_global
 ```
 
 ---
+## Customizing the template directory
+
+```shell
+git config --global init.templatedir ~/path/to/my/templatedir
+```
+
+- On my system, defaults to `/usr/share/git-core/templates`
+- I wrote an entire project about this, check it out: http://git-template.readthedocs.io
+
+---
 
 <div style="width: 50%; float: left;">
 <h1>Thanks!</h1>

@@ -175,3 +175,11 @@ code {
 blockquote.twitter-tweet {
     /*transform: scale(2);*/
 }
+
+.reveal a {
+    color: #FFE265;
+}
+
+.reveal a:hover {
+    color: #FFE295;
+}
