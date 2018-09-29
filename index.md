@@ -53,6 +53,11 @@ git commit -v # for short
 - another chance to catch your mistakes before they get out
 
 ---
+## Reviewing one more time
+
+<img src="./commit-verbose.png" alt="patch screenshot" />
+
+---
 ## Writing a good commit message: the format
 
 ```shell
