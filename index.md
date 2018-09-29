@@ -129,6 +129,11 @@ They happen when several people change the same file.
 - respect the Open/Close Principle
 - write short lines (< 80 - 120 chars)
 
+Finding the most edited files:
+```shell
+git log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
+```
+
 ---
 ## Finding the culprit 🔍
 
