@@ -30,9 +30,9 @@ git add -p # for short
 ```
 
 - is your best friend
-- works with `reset` and `checkout` too
 - allows you to commit part of a file
 - allows you to catch your mistakes before they get out
+- works with `reset` and `checkout` too
 
 Always use it, avoid `git add .` (use `git add -N`?)
 
