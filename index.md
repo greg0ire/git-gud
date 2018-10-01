@@ -128,7 +128,7 @@ git bisect reset
 ---
 ## Avoiding (git) conflicts 💥
 
-They happen when several people change the same file.
+They happen when several people change the same file around the same line.
 
 - when in doubt, use alphabetical order
 - respect the Open/Close Principle
