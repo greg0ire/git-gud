@@ -108,6 +108,14 @@ The commit message body:
 <img src="./opinion.jpg" alt="your opinion" />
 
 ---
+## Using the force ✋
+
+```
+git commit --amend
+git push --force-with-lease
+```
+
+---
 ## Proving your innocence: bisection 👼
 
 ```shell
