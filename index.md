@@ -221,6 +221,13 @@ git config --global init.templatedir ~/path/to/my/templatedir
 - I wrote an entire project about this, check it out: http://git-template.readthedocs.io
 
 ---
+## Reusing Recorded Resolutions of conflict merges
+
+```shell
+git config --global rerere.enabled true
+```
+
+---
 ## Viewing your history, the cool way 😎
 
 ```shell
