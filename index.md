@@ -58,14 +58,14 @@ git commit -v # for short
 <img src="./commit-verbose.png" alt="patch screenshot" />
 
 ---
-## Writing a good commit message: the format
+## Writing a good commit message: the format 📝
 
 ```shell
 git commit -m "This is the worst possible way to commit" # do not do this
 ```
 
 - first line is the subject and should be less than 50 chars
-- second line is _streng verboten_
+- second line is _streng verboten_ ⛔
 - write a paragraph (the commit body) below, wrap it at 72 chars
 
 Use vim, it enforces it!
@@ -75,7 +75,7 @@ git config --global core.editor "vim"
 ```
 
 ---
-## Writing a good commit message: the contents
+## Writing a good commit message: the contents 📜
 
 The commit message subject:
 
@@ -84,7 +84,7 @@ The commit message subject:
 - should not depend on JIRA or any other online resource
 
 ---
-## Writing a good commit message: the contents
+## Writing a good commit message: the contents 📜
 
 The commit message body:
 
@@ -108,7 +108,7 @@ The commit message body:
 <img src="./opinion.jpg" alt="your opinion" />
 
 ---
-## Proving your innocence: bisection
+## Proving your innocence: bisection 👼
 
 ```shell
 git bisect start
@@ -126,7 +126,7 @@ git bisect reset
 - is a good reason to write short commits
 
 ---
-## Avoiding (git) conflicts
+## Avoiding (git) conflicts 💥
 
 They happen when several people change the same file.
 
@@ -160,7 +160,7 @@ git checkout origin/master
 ```
 
 ---
-## Basic hygiene
+## Basic hygiene 🚿
 
 ```shell
 git fetch --prune
@@ -168,7 +168,7 @@ git branch --merged origin/master | xargs git branch -d
 ```
 
 ---
-## Undoing a catastrophic failure
+## Undoing a catastrophic failure 💀
 
 ```
 git reflog --date=iso
@@ -221,7 +221,7 @@ git config --global init.templatedir ~/path/to/my/templatedir
 - I wrote an entire project about this, check it out: http://git-template.readthedocs.io
 
 ---
-## Viewing your history, the cool way
+## Viewing your history, the cool way 😎
 
 ```shell
 gource
