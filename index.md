@@ -172,6 +172,8 @@ git branch --merged origin/master | xargs git branch -d
 
 ```
 git reflog --date=iso
+git show 2efadeb
+git reset --hard 2efadeb
 ```
 
 ---
