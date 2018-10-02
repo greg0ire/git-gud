@@ -10,6 +10,6 @@
   },
   "scripts": {
     "start": "reveal-md index.md --port 8000 --theme=solarized --css main.css --scripts widgets.js,embed-tweet.js",
-    "build": "reveal-md index.md --static _site --theme=solarized --css main.css --scripts widget.js,embed-tweet.js"
+    "build": "reveal-md index.md --static _site --theme=solarized --css main.css --scripts widgets.js,embed-tweet.js"
   }
 }
