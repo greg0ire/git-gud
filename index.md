@@ -212,6 +212,14 @@ git rebase --interactive 6aa1c74 # git rebase -i for short
 <img src="./autosquash.png" alt="autosquash in action" />
 
 ---
+## Fixing coding standard issues properly
+
+```shell
+git rebase [--interactive] --exec "php-cs-fixer fix"
+```
+<img src="./rebase-exec.png" alt="rebase --exec in action" />
+
+---
 ## Excluding files globally
 
 
