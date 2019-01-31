@@ -183,6 +183,7 @@ git reflog --date=iso
 git show 2efadeb
 git reset --hard 2efadeb
 ```
+<img src="./reflog.png" alt="reflog screenshot" />
 
 ---
 ## Understanding `checkout`'s "inconsistent" API
