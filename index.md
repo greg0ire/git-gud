@@ -213,6 +213,15 @@ git rebase --interactive 6aa1c74 # git rebase -i for short
 <img src="./autosquash.png" alt="autosquash in action" />
 
 ---
+## Customizing the format of git rebase --interactive
+
+```shell
+git config --global rebase.abbreviateCommands true
+git config --global rebase.instructionFormat "[%an @ %ar] %s"
+```
+<img src="./rebase-customized.png" alt="git rebase with custom instruction format" />
+
+---
 ## Fixing coding standard issues properly
 
 ```shell
