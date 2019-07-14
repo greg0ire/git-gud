@@ -83,7 +83,7 @@ The commit message *subject*:
 
 - should be about *what* you did
 - completes "If applied, this commit will…"
-- should not depend on JIRA or any other online resource
+- should not depend on JIRA or any other online resource (you only have 50 chars!)
 
 ---
 ## Writing a good commit message: the contents 📜
