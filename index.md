@@ -64,6 +64,8 @@ git commit -v # for short
 git commit -m "This is the worst possible way to commit" # do not do this
 ```
 
+It should look like an e-mail 📧
+
 - first line is the subject and should be less than 50 chars
 - second line is _streng verboten_ ⛔
 - write a paragraph (the commit body) below, wrap it at 72 chars
