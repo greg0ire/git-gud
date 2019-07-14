@@ -79,7 +79,7 @@ git config --global core.editor "vim"
 ---
 ## Writing a good commit message: the contents 📜
 
-The commit message subject:
+The commit message *subject*:
 
 - should be about *what* you did
 - completes "If applied, this commit will…"
@@ -88,7 +88,7 @@ The commit message subject:
 ---
 ## Writing a good commit message: the contents 📜
 
-The commit message body:
+The commit message *body*:
 
 - should explain *why* you did what you did
 - should sum up lengthy Git{hub,lab} / Bitbucket discussions
