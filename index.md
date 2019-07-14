@@ -98,7 +98,7 @@ The commit message *body*:
 ---
 ## Writing a bad commit message: the GitHub UI user
 
-`Update src/App/Entity/User.php`
+<img src="./githubUI.png" alt="update file.txt" />
 
 - don't use the web UI
 - organize a mass protest to change GitHub's behavior
