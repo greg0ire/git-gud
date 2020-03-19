@@ -173,7 +173,10 @@ git checkout origin/master
 ## Basic hygiene 🚿
 
 ```shell
+# prune remote branches that are gone
 git fetch --prune
+
+# delete branches that are merged in origin/master
 git branch --merged origin/master | xargs git branch -d
 ```
 
