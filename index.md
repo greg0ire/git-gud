@@ -178,6 +178,9 @@ git fetch --prune
 
 # delete branches that are merged in origin/master
 git branch --merged origin/master | xargs git branch -d
+
+# delete branch that had an upstream branch in the past, but no longer do
+git branch -v|grep -F '[gone]'|cut --field 3 --delimiter ' '|xargs git branch -D
 ```
 
 ---
