@@ -50,6 +50,9 @@ code {
     padding: 20px;
     font-family: Consola, monospace;
 }
+.reveal .progress {
+    color: #FFE265;
+}
 
 .hljs {
     background-color: #272C35;
