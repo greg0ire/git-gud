@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "reveal-md": "^1.1.3"
+    "reveal-md": "^3.4.7"
   },
   "scripts": {
     "start": "reveal-md index.md --port 8000 --theme=solarized --css main.css --scripts widgets.js,embed-tweet.js",

@@ -4,13 +4,9 @@
 <!-- .slide: id="hello" -->
 ## Hi!
 
-<div>
-  <span id="gregoire">![Gregoire](./PARIS-150x150.jpg)</span><br />
-  **Grégoire PARIS**<br />
-  <span class="job">
-  Software Engineer @ ManoMano<br />
-  </span>
-</div>
+![Gregoire](./PARIS-150x150.jpg)<br />
+**Grégoire PARIS**<br />
+Software Engineer @ ManoMano<br />
 
 ---
 <img src="./git.svg" />
