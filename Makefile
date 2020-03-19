@@ -9,6 +9,8 @@ upgrade: yarn.lock package.json
 
 start_the_show: node_modules
 	$(NODE) -p $(LOCAL_PORT):8000 --name gitgud node /bin/sh -c 'npm start'
+.PHONY: start_the_show
 
 build: node_modules
 	$(NODE) -p $(LOCAL_PORT):8000 --name gitgud node /bin/sh -c 'npm run-script build'
+.PHONY: build
