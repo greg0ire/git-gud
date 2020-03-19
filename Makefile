@@ -3,6 +3,10 @@ LOCAL_PORT=8000
 node_modules: yarn.lock package.json
 	$(NODE) node yarn install
 
+upgrade: yarn.lock package.json
+	$(NODE) node yarn upgrade
+.PHONY: update
+
 start_the_show: node_modules
 	$(NODE) -p $(LOCAL_PORT):8000 --name gitgud node /bin/sh -c 'npm start'
 
