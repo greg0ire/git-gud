@@ -205,7 +205,7 @@ git checkout 💩 # shortcut for git checkout 💩 .
 git checkout README.md # shortcut for git checkout HEAD README.md
 ```
 
-🎉 Replaced with switch and resotre in recent versions 🎉
+🎉 Replaced with switch and restore in recent versions 🎉
 
 ```shell
 git switch 💩
