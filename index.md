@@ -28,7 +28,7 @@ git add -p # for short
 - is your best friend
 - allows you to commit part of a file
 - allows you to catch your mistakes before they get out
-- works with `reset` and `checkout` too
+- works with `reset` and ~~`checkout`~~`restore` too
 
 Always use it, avoid `git add .` (use `git add -N`?)
 
@@ -119,7 +119,7 @@ git push --force-with-lease
 ```shell
 git bisect start
 git bisect bad
-git checkout ancient-commit
+git switch --detach ancient-commit
 git bisect good
 git bisect [good|bad|skip]
 git bisect [good|bad|skip]
@@ -162,7 +162,7 @@ git branch -d master
 ```
 Need to test something on "master"?
 ```
-git checkout origin/master
+git switch --detach origin/master # -d for short
 ```
 
 ---
