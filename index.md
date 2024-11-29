@@ -157,14 +157,18 @@ git log -S 'var_dump' -p # the accurate way
 
 
 ---
-## How to avoid committing on the master branch
+## How to avoid committing on a protected branch
 
 ```shell
-git branch -d master
+git branch -d main
 ```
-Need to test something on "master"?
+Need to start a new branch?
+```shell
+git switch --create origin/main
 ```
-git switch --detach origin/master # -d for short
+Need to test something on "main"?
+```shell
+git switch --detach origin/main # -d for short
 ```
 
 ---
@@ -176,8 +180,9 @@ git fetch --prune
 
 # do that by default
 git config --global fetch.prune true
-# delete branches that are merged in origin/master
-git branch --merged origin/master | xargs git branch -d
+
+# delete branches that are merged in origin/main
+git branch --merged origin/main | xargs git branch -d
 
 # delete branches that had an upstream branch in the past, but no longer do
 git branch -v|grep -F '[gone]'|cut --field 3 --delimiter ' '|xargs git branch -D
