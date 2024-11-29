@@ -43,6 +43,7 @@ Always use it, avoid `git add .` (use `git add -N`?)
 ```shell
 git commit --verbose
 git commit -v # for short
+git config --global commit.verbose true # to adopt it forever
 ```
 
 - is your second best friend
@@ -172,6 +173,8 @@ git switch --detach origin/master # -d for short
 # prune remote branches that are gone
 git fetch --prune
 
+# do that by default
+git config --global fetch.prune true
 # delete branches that are merged in origin/master
 git branch --merged origin/master | xargs git branch -d
 
