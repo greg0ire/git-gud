@@ -124,6 +124,7 @@ git switch --detach ancient-commit
 git bisect good
 git bisect [good|bad|skip]
 git bisect [good|bad|skip]
+git bisect visualize # uses gitk 🤮
 …
 git bisect reset
 ```
