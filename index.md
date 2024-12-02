@@ -254,8 +254,8 @@ git rebase [--interactive] --exec "php-cs-fixer fix"
 
 
 ```shell
-git config --global core.excludesfile ~/.gitignore_global
-echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.config/git/ignore
+echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.config/git/ignore
 ```
 
 ---
