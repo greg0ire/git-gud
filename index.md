@@ -291,5 +291,5 @@ gource
 </div>
 <div>
   <p>Grégoire Paris</p>
-  <p><img src="./twi1.svg" width="50" style="vertical-align: text-bottom; margin: 0;" /> greg0ire</p>
+  <p><img src="./mastodon.svg" width="50" style="vertical-align: text-bottom; margin: 0;" /> greg0ire@phpc.social</p>
 </div>
