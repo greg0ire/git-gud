@@ -202,22 +202,22 @@ git reset --hard 2efadeb
 ## Understanding `checkout`'s "inconsistent" API
 
 ```shell
-git checkout 💩 # resets the working tree to that branch
+git checkout my-branch # resets the working tree to that branch
 git checkout README.md # forgets about changes in README.md 😕
-git checkout 💩 README.txt # sets README.md to what it looks like in 💩
+git checkout my-branch README.txt # sets README.md to what it looks like in my-branch
 ```
 
 💡
 
 ```shell
-git checkout 💩 # shortcut for git checkout 💩 .
+git checkout my-branch # shortcut for git checkout my-branch .
 git checkout README.md # shortcut for git checkout HEAD README.md
 ```
 
 🎉 Replaced with switch and restore in recent versions 🎉
 
 ```shell
-git switch 💩
+git switch my-branch
 git restore README.md # shortcut for git checkout HEAD README.md
 ```
 
