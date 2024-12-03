@@ -43,6 +43,7 @@ Always use it, avoid `git add .` (use `git add -N`?)
 ```shell
 git commit --verbose
 git commit -v # for short
+git config --global commit.verbose true # to adopt it forever
 ```
 
 - is your second best friend
@@ -123,6 +124,7 @@ git switch --detach ancient-commit
 git bisect good
 git bisect [good|bad|skip]
 git bisect [good|bad|skip]
+git bisect visualize # uses gitk 🤮
 …
 git bisect reset
 ```
@@ -155,14 +157,18 @@ git log -S 'var_dump' -p # the accurate way
 
 
 ---
-## How to avoid committing on the master branch
+## How to avoid committing on a protected branch
 
 ```shell
-git branch -d master
+git branch -d main
 ```
-Need to test something on "master"?
+Need to start a new branch?
+```shell
+git switch --create origin/main
 ```
-git switch --detach origin/master # -d for short
+Need to test something on "main"?
+```shell
+git switch --detach origin/main # -d for short
 ```
 
 ---
@@ -172,8 +178,11 @@ git switch --detach origin/master # -d for short
 # prune remote branches that are gone
 git fetch --prune
 
-# delete branches that are merged in origin/master
-git branch --merged origin/master | xargs git branch -d
+# do that by default
+git config --global fetch.prune true
+
+# delete branches that are merged in origin/main
+git branch --merged origin/main | xargs git branch -d
 
 # delete branches that had an upstream branch in the past, but no longer do
 git branch -v|grep -F '[gone]'|cut --field 3 --delimiter ' '|xargs git branch -D
@@ -193,22 +202,22 @@ git reset --hard 2efadeb
 ## Understanding `checkout`'s "inconsistent" API
 
 ```shell
-git checkout 💩 # resets the working tree to that branch
+git checkout my-branch # resets the working tree to that branch
 git checkout README.md # forgets about changes in README.md 😕
-git checkout 💩 README.txt # sets README.md to what it looks like in 💩
+git checkout my-branch README.txt # sets README.md to what it looks like in my-branch
 ```
 
 💡
 
 ```shell
-git checkout 💩 # shortcut for git checkout 💩 .
+git checkout my-branch # shortcut for git checkout my-branch .
 git checkout README.md # shortcut for git checkout HEAD README.md
 ```
 
 🎉 Replaced with switch and restore in recent versions 🎉
 
 ```shell
-git switch 💩
+git switch my-branch
 git restore README.md # shortcut for git checkout HEAD README.md
 ```
 
@@ -245,8 +254,8 @@ git rebase [--interactive] --exec "php-cs-fixer fix"
 
 
 ```shell
-git config --global core.excludesfile ~/.gitignore_global
-echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.config/git/ignore
+echo ".DS_STORE_OR_WHATEVER_IT_IS" >> ~/.config/git/ignore
 ```
 
 ---
@@ -282,5 +291,5 @@ gource
 </div>
 <div>
   <p>Grégoire Paris</p>
-  <p><img src="./twi1.svg" width="50" style="vertical-align: text-bottom; margin: 0;" /> greg0ire</p>
+  <p><img src="./mastodon.svg" width="50" style="vertical-align: text-bottom; margin: 0;" /> greg0ire@phpc.social</p>
 </div>
