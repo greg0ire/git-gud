@@ -164,7 +164,7 @@ git branch -d main
 ```
 Need to start a new branch?
 ```shell
-git switch --create origin/main
+git switch --create new-branch origin/main
 ```
 Need to test something on "main"?
 ```shell
