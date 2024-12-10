@@ -1,5 +1,8 @@
+:root {
+    --r-background-color: #009EF5;
+}
+
 body {
-    background-color: #009EF5;
     background-image: linear-gradient(#0180F5, #009EF5);
 }
 
